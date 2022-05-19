@@ -4,17 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel=”stylesheet” href=”https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css”rel=”nofollow” integrity=”sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I” crossorigin=”anonymous”>
+    <title>Natural language preprocessing</title>
+    <style>
+        html {    
+        background: url('https://besthqwallpapers.com/Uploads/22-2-2020/122957/thumb2-vegetables-frames-4k-food-concepts-vegetables-on-wooden-background-creative.jpg') no-repeat center fixed;     
+        background-size: cover;
+        }
+        .container{
+            margin-top: 10cm;
+            display: flex;
+            justify-content: center;
+        }
+        .res{
+            margin-top: 200;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <form name="form1" action="/" method="post">
-            <input type="text" name="comment">
-            <input type="submit" value="Submit">
-        </form>
-        <p>
-            {{ predict }}
-        </p>
+    <div class="container">
+        <div class="res">
+            <p>
+                Đánh giá thuộc lớp: {{ predict }}
+            </p>
+        </div>
+        <div class="input">
+            <form name="form1" action="/" method="post">
+                <input type="text" name="comment">
+                <input type="submit" value="Phân loại">
+            </form>
+        </div>
     </div>
 
 </body>
